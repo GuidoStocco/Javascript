@@ -95,3 +95,20 @@ for (let t = 0; t < 10; t++){
     console.log(`Repetindo algo..${t}`);
 }
 
+// SWITCH
+
+const job = "Aads";
+   
+switch(job){
+    case "Programdor":
+        console.log("Voce é um Programador")
+        break
+    case "Advogado":
+        console.log("Voce é um Advogado")
+        break    
+    case "Engenheiro":
+        console.log("Voce é um Engenheiro")
+        break
+    default:
+        console.log("Profissao não encontrada")
+}
