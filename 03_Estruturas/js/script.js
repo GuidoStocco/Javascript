@@ -73,3 +73,25 @@ if(1 > 2){
 
 // ESTRUTURA DE REPETIÇÃO : WHILE
 
+let p = 0;
+
+while(p < 5){
+    console.log(`repetindo ${p}`);
+    p = p + 1;
+}
+
+// DO WHILE
+
+let o = 10;
+
+do {
+    console.log(`o valor de o: ${o}`);
+    o--
+} while(o > 0);
+
+// FOR
+
+for (let t = 0; t < 10; t++){
+    console.log(`Repetindo algo..${t}`);
+}
+
