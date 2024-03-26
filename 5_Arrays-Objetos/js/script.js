@@ -129,7 +129,7 @@ nums.forEach((numero) =>{
 */
 
 // INCLUDES
-
+/*
 const brands = ["bmw", "fiat", "nissan"];
 
 console.log(brands.includes("fiat"));
@@ -138,3 +138,18 @@ console.log(brands.includes("honda"));
 if(brands.includes("bmw")){
     console.log("há carros da marca BMW!")
 };
+
+// REVERSE
+
+const inverte = [1, 2, 3, 4, 5];
+
+inverte.reverse();
+
+console.log(inverte);
+*/
+
+// MÉTODOS DE STRING: TRIM
+
+const trimTest = " testando \n ";
+console.log(trimTest);
+console.log(trimTest.trim());
