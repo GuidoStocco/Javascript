@@ -73,7 +73,7 @@ console.log(b);
 */
 
 // LOOP EM ARRAY
-
+/*
 const users = ["guido", "mateus", "joão", "miguel"];
 
 for(let i = 0; i < users.length; i++){
@@ -104,3 +104,37 @@ console.log(letters);
 const myElements = ['morango', 'pêra', 'maça', 'abacate', 'uva'];
 console.log(myElements.indexOf('pêra'));
 console.log(myElements.lastIndexOf('uva'));
+
+// MÉTODO DE ARRAY SLICE
+
+const metodoSlice = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+const testeSlice = metodoSlice.slice(2, 4);
+
+console.log(testeSlice);
+
+console.log(metodoSlice);
+
+const testeSlice2 = metodoSlice.slice(2, 4 + 1);
+
+console.log(testeSlice2);
+
+// ForEach
+
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((numero) =>{
+    console.log(`o número é ${numero}`);
+});
+*/
+
+// INCLUDES
+
+const brands = ["bmw", "fiat", "nissan"];
+
+console.log(brands.includes("fiat"));
+console.log(brands.includes("honda"));
+
+if(brands.includes("bmw")){
+    console.log("há carros da marca BMW!")
+};
