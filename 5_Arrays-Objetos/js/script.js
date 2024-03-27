@@ -149,7 +149,7 @@ console.log(inverte);
 */
 
 // MÉTODOS DE STRING: TRIM
-
+/*
 const trimTest = " testando \n ";
 console.log(trimTest);
 console.log(trimTest.trim());
@@ -176,3 +176,10 @@ const itemsPraComprar = ['Mouse', 'Teclado', 'Monitor'];
 
 const comprar = `Precisamos comprar: ${itemsPraComprar.join(', ')}.`;
 console.log(comprar);
+
+// Repeat
+
+const testeRepeat = 'Repetindo ';
+console.log(testeRepeat.repeat(5));
+*/
+//
