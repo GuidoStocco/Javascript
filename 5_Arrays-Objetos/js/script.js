@@ -182,4 +182,52 @@ console.log(comprar);
 const testeRepeat = 'Repetindo ';
 console.log(testeRepeat.repeat(5));
 */
-//
+// 
+
+// REST OPERATOR / REST PARAMETERS
+/*
+const somaInfinita = (...args) => {
+    let total = 0
+
+    for(let i = 0; i < args.length; i++) {
+        total += args[i]
+    }
+
+    return total;
+};
+
+console.log(somaInfinita(1, 2, 3));
+
+// for of
+
+const somaInfinita2 = (...args) => {
+
+    let total = 0
+
+    for(num of args) {
+        total += num;
+    }
+    return total;
+};
+console.log(somaInfinita2(1, 23, 412));
+
+// DESTRUCTURING EM OBJETOS
+
+const userDetails = {
+    firstName:'Guido',
+    lastName: 'Stocco',
+    job: 'Programador'
+}
+const {firstName, lastName, job} = userDetails
+console.log(firstName, lastName, job);
+// RENOMEAR VARIÁVEIS
+const {firstName: primeironome} = userDetails;
+console.log(firstName);
+
+// DESTRUCTURING EM ARRAYS
+
+const myList = ['carro', 'moto', 'quadriciculo']
+const[veiculoA, veiculoB, veiculoC] = myList
+console.log(veiculoA, veiculoB, veiculoC);
+*/
+
