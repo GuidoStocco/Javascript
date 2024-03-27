@@ -153,3 +153,26 @@ console.log(inverte);
 const trimTest = " testando \n ";
 console.log(trimTest);
 console.log(trimTest.trim());
+
+// padStart
+
+const testePadStart = "1";
+const number = testePadStart.padStart(4, "0");
+
+console.log(testePadStart);
+console.log(number);
+
+// SPLIT
+
+const testeSplit = 'o rato roeu a roupa do rei de roma';
+const arrayDaFrase = testeSplit.split(' ');
+console.log(arrayDaFrase);
+
+// Join
+const testeSplit2 = arrayDaFrase.join(' ');
+console.log(testeSplit2);
+
+const itemsPraComprar = ['Mouse', 'Teclado', 'Monitor'];
+
+const comprar = `Precisamos comprar: ${itemsPraComprar.join(', ')}.`;
+console.log(comprar);
