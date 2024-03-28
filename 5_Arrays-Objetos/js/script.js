@@ -231,3 +231,14 @@ const[veiculoA, veiculoB, veiculoC] = myList
 console.log(veiculoA, veiculoB, veiculoC);
 */
 
+// JSON
+
+const myJson = '{"name": "Guido", "age": 24, "skills": ["PHP", "Javascript"]}';
+console.log(myJson);
+
+// json para objeto e objeto para json
+
+const myObject = JSON.parse(myJson);
+console.log(myObject);
+console.log(myObject.name);
+console.log(typeof myObject);
