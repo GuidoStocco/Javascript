@@ -89,3 +89,18 @@ const Strada = new Carro('6', 'branco');
 console.log(Strada);
 Strada.descriptionCar();
 
+// OVERRIDE
+
+class Humano {
+    constructor(nome, idade){
+        this.idade = idade;
+        this.nome = nome;
+    }
+};
+
+const Guido = new Humano('Guido', 24);
+console.log(Guido);
+
+Humano.prototype.nome = 'Não Definido';
+console.log(Guido.nome);
+console.log(Humano.prototype.nome);
