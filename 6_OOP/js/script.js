@@ -64,10 +64,28 @@ husky.uivar();
 // CLASSES ES6
 
 class CachorroClasse {
-    Constructor(nome, raca){
+    constructor(nome, raca){
         this.nome = nome
         this.raca = raca
     }
 };
 const katara = new CachorroClasse('katara', 'yorkshire');
 console.log(katara);
+
+
+// Mais sobre classes
+
+class Carro {
+    constructor(eixos, cor) {
+        this.eixos = eixos;
+        this.cor = cor;
+    }
+
+    descriptionCar(){
+        console.log(`Este carro tem ${this.eixos} eixos e é da cor ${this.cor}`)
+    }
+};
+const Strada = new Carro('6', 'branco');
+console.log(Strada);
+Strada.descriptionCar();
+
