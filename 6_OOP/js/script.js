@@ -29,7 +29,7 @@ console.log(Object.getPrototypeOf(text));
 */
 
 //CLASSES BASEADAS EM FUNÇÕES CONSTRUTORAS
-
+/*
 function criarCachorro(nome, raca)  {
     const cachorro = Object.create({})
 
@@ -59,3 +59,15 @@ Cachorro.prototype.uivar = function (){
 };
 console.log(Cachorro.prototype);
 husky.uivar();
+
+*/
+// CLASSES ES6
+
+class CachorroClasse {
+    Constructor(nome, raca){
+        this.nome = nome
+        this.raca = raca
+    }
+};
+const katara = new CachorroClasse('katara', 'yorkshire');
+console.log(katara);
