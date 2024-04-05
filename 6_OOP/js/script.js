@@ -62,7 +62,7 @@ husky.uivar();
 
 */
 // CLASSES ES6
-
+/*
 class CachorroClasse {
     constructor(nome, raca){
         this.nome = nome
@@ -104,3 +104,64 @@ console.log(Guido);
 Humano.prototype.nome = 'Não Definido';
 console.log(Guido.nome);
 console.log(Humano.prototype.nome);
+*/
+
+
+// SYMBOL COM CLASSES
+/*
+class Pc {
+    constructor(placa_mae, processador){
+        this.placa_mae = placa_mae;
+        this.processador = processador;
+    }
+};
+const PastaTermica = Symbol()
+
+Pc.prototype[PastaTermica] = 'Necessario'
+
+const PcGuido = new Pc('ASROCK', 'Ryzen 9 5900x');
+console.log(PcGuido);
+console.log(PcGuido[PastaTermica]);
+
+// GETTERS E SETTERS
+
+class Post{
+    constructor(titulos, descricao, tags){
+        this.titulos = titulos;
+        this.descricao = descricao;
+        this.tags = tags;
+    }
+
+    get exibirTitulo(){
+        return `Você está lendo: ${this.titulos}`;
+    }
+
+    set adicionarTags(tags){
+        const tagsArray = tags.split(', ')
+        this.tags = tagsArray
+    }
+};
+const myPost = new Post('Sobre computadores', 'Melhores processadores');
+console.log(myPost);
+console.log(myPost.exibirTitulo);
+
+myPost.adicionarTags = "Programação, javascrpit, js"
+console.log(myPost);
+*/
+
+// HERANÇA
+
+class Mamifero {
+    constructor(patas){
+        this.patas = patas;
+    }
+};
+
+class Lobo extends Mamifero {
+    constructor(patas, nome){
+        super(patas,patas)
+        this.nome = nome;
+    }
+};
+const Wolf = new Lobo(4, 'Wolf');
+console.log(Wolf);
