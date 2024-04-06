@@ -75,3 +75,13 @@ try {
 };
 
 // FINALLY
+
+try {
+    const value = checknumber('asd')
+
+    if(!value){
+        throw new Error('Valores Inválidos')
+    }
+}catch(error){
+    console.log(`opa, aconteceu um problema ${error}`)
+}; 
