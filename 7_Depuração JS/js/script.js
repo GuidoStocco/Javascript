@@ -66,4 +66,12 @@ if(x != 11){
 */
 
 
-//
+// TRY CATCH
+
+try {
+    const soma = x + y
+} catch(error){
+    console.log(`erro no programa: ${error}`)
+};
+
+// FINALLY
