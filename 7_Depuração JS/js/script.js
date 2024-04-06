@@ -41,4 +41,16 @@ if(c > 5){
 }
 
 
-//
+//TRATAMENTO DE DADOS
+
+function checknumber(n){
+    const result = Number(n)
+
+    if(Number.isNaN(result)){
+        console.log("Valor Incorreto")
+        return;
+    }
+
+    console.log("Valor Correto")
+    return result;
+}
