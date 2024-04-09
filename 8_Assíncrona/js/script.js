@@ -45,3 +45,10 @@ somaComDelay(2, 4).then((value) => {
 
 
 // async await
+function resolveComDelay(){
+    return new Promise(resolve => {
+        setTimeout(() =>{
+            resolve("Resolveu a promise")
+        }, 2000)
+    })
+}
