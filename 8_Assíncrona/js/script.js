@@ -1,3 +1,4 @@
+/*
 console.log("Ainda não executou");
 
 setTimeout(function(){
@@ -29,6 +30,14 @@ promessa.then((value) => {
 });
 
 console.log("Outro código");
+*/
 
+// async function
 
-// ERROS NA PROMISES
+async function somaComDelay(a, b){
+    return a + b
+};
+
+somaComDelay(2, 4).then((value) => {
+    console.log(`O valor da soma é ${value}`)
+});
