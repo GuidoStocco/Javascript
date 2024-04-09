@@ -41,3 +41,7 @@ async function somaComDelay(a, b){
 somaComDelay(2, 4).then((value) => {
     console.log(`O valor da soma é ${value}`)
 });
+
+
+
+// async await
