@@ -19,3 +19,12 @@ console.log(title);
 // Selecionand elemento por CLASSES
 const listProduct = document.getElementsByClassName("product");
 console.log(listProduct);
+
+
+// Selecionando elementos por querySeletorAll
+const listProducts = document.querySelectorAll(".product");
+console.log(listProducts);
+
+// querySeletor
+const mainContainer = document.querySelector("#main-container");
+console.log(mainContainer);
