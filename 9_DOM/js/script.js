@@ -14,3 +14,8 @@ console.log(listItems);
 // Selecionando o elemento pelo ID
 const title = document.getElementById("tittle");
 console.log(title);
+
+
+// Selecionand elemento por CLASSES
+const listProduct = document.getElementsByClassName("product");
+console.log(listProduct);
