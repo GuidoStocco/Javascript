@@ -18,4 +18,17 @@ console.log("Ainda não executou 2");
 console.log("Ainda não executou 2");
 
 
-//
+// PROMISES
+
+const promessa = Promise.resolve(24 + 24);
+
+console.log("Algum código");
+
+promessa.then((value) => {
+    console.log(`A soma é ${value}`)
+});
+
+console.log("Outro código");
+
+
+// ERROS NA PROMISES
