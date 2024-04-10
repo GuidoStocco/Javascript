@@ -73,3 +73,15 @@ const mySecondText = document.createTextNode("texto em branco")
 const h4 = document.createElement("h4")
 h4.appendChild(mySecondText)
 header.appendChild(h4)
+
+
+// Trabalhando com Atributos
+
+const firstLink = navLinks.querySelector("a")
+
+firstLink.setAttribute("href", "https:www.google.com.br")
+
+firstLink.setAttribute("target", "_blank")
+
+
+//
