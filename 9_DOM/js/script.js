@@ -84,4 +84,9 @@ firstLink.setAttribute("href", "https:www.google.com.br")
 firstLink.setAttribute("target", "_blank")
 
 
-//
+// Altura e Largura offsetWidth e offsetHeight
+
+const footer = document.querySelector("footer")
+console.log(footer.offsetWidth);
+console.log(footer.offsetHeight);
+
