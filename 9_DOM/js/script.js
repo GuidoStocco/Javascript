@@ -90,3 +90,10 @@ const footer = document.querySelector("footer")
 console.log(footer.offsetWidth);
 console.log(footer.offsetHeight);
 
+
+
+// posição do elemento
+
+const product1 = listProducts[0];
+
+console.log(product1.getBoundingClientRect());
