@@ -28,3 +28,12 @@ console.log(listProducts);
 // querySeletor
 const mainContainer = document.querySelector("#main-container");
 console.log(mainContainer);
+
+
+// insertBefore
+
+const p = document.createElement("p");
+
+const header = title.parentElement
+
+header.insertBefore(p, title);
