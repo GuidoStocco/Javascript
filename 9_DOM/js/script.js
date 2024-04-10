@@ -56,3 +56,20 @@ h2.textContent = "Meu novo título"
 header.replaceChild(h2, title);
 
 console.log(h2);
+
+
+// creatTextNode
+
+const myText = document.createTextNode("Um novo texto com textnode")
+
+const h3 = document.createElement("h3")
+
+h3.appendChild(myText);
+
+mainContainer.appendChild(h3)
+console.log(h3)
+
+const mySecondText = document.createTextNode("texto em branco")
+const h4 = document.createElement("h4")
+h4.appendChild(mySecondText)
+header.appendChild(h4)
