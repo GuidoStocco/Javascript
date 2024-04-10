@@ -45,3 +45,14 @@ const navLinks = document.querySelector("nav ul");
 const li = document.createElement("li");
 
 navLinks.appendChild(li);
+
+
+// replaceChild
+
+const h2 = document.createElement("h2")
+
+h2.textContent = "Meu novo título"
+
+header.replaceChild(h2, title);
+
+console.log(h2);
