@@ -6,3 +6,18 @@ btn.addEventListener("click", function(){
 });
 
 
+// Removendo o Evento
+const secondBtn = document.querySelector("#btn");
+
+function imprimiMensagem(){
+    console.log("teste")
+};
+
+secondBtn.addEventListener("click", imprimiMensagem);
+//
+const thirdBtn = document.querySelector("#other-btn")
+
+thirdBtn.addEventListener("click", () => {
+    console.log("Evento removido")
+    secondBtn.removeEventListener("click", imprimiMensagem)
+});
