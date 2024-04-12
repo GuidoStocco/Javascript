@@ -21,3 +21,12 @@ thirdBtn.addEventListener("click", () => {
     console.log("Evento removido")
     secondBtn.removeEventListener("click", imprimiMensagem)
 });
+
+
+// ARGUMENTO DO EVENTO
+
+const myTittle = document.querySelector("#my-tittle")
+
+myTittle.addEventListener("click", (event) => {
+    console.log(event);
+});
