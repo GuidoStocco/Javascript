@@ -31,5 +31,11 @@ const preco = [3.50, 5, 3.50, 2, 2.50, 0]
 
 
 // some - vai retorna um boolean, true ou false. Precisa ter um item para retorna true
-const resultado1 = estoque.some((valor, index, array) => valor);
+//const resultado1 = estoque.some((valor, index, array) => valor);
 
+
+// every - precisa ter todos os itens para retornar um true, vai retornar um boolean
+//const resultado = estoque.every((valor, index, array) => valor);
+
+// filter - vai retornar um novo array
+const resultado = estoque.filter((valor, index, array) => valor === 'arroz')
