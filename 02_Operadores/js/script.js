@@ -51,7 +51,7 @@ console.log(9 != "9");
 console.log(9 !== "9"); //tipo é diferente */
 
 // Operadores Lógicos
-
+/*
 console.log(true && true);
 console.log(true && false);
 console.log(true || false);
@@ -61,4 +61,4 @@ console.log(false || false);
 console.log(typeof null, typeof undefined);
 console.log(null === undefined);
 console.log(null == undefined);
-
+*/
