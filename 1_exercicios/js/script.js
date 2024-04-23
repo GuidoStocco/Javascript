@@ -53,3 +53,39 @@ if(idade >= 18 && cnh == false){
 } else {
     console.log("você é de menor, e não pode dirigir")
 };
+
+
+//loop while de 0 a 10
+/*
+let numb = 0;
+
+while(numb < 10){
+    numb++
+    console.log(numb)
+}
+*/
+
+// loop de 100 a 50
+/*
+for(let numb = 100; numb >= 50; numb-=2){
+    console.log(numb);
+};
+*/
+
+// loop 
+/*
+for(let i = 0; i <= 50; i++){
+    if(i % 2 == 0){
+        console.log(`o numero ${i} é par`)
+    } else{
+        console.log(`o número ${i} é ímpar`)
+    };
+};
+*/
+/*
+let a = "123"
+let b = 4
+
+console.log("123" + 4)
+console.log("123" - 4)
+*/
