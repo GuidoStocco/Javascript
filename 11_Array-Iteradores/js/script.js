@@ -38,4 +38,4 @@ const preco = [3.50, 5, 3.50, 2, 2.50, 0]
 //const resultado = estoque.every((valor, index, array) => valor);
 
 // filter - vai retornar um novo array
-const resultado = estoque.filter((valor, index, array) => valor === 'arroz')
+//const resultado = estoque.filter((valor, index, array) => valor === 'arroz')
