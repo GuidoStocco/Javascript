@@ -1,4 +1,5 @@
 // ARMAZENANDO VALORES STRING, NUMBER, BOOLEAN
+/*
 let nami = "Guido";
 let age = 24;
 let gs = true;
@@ -38,4 +39,17 @@ if(velo > 80){
     console.log("Você está no limite permitido")
 } else{
     console.log("Você está acima do limite permitido")
+};
+*/
+
+// estrutura de if/else
+let idade = 24;
+let cnh = true;
+
+if(idade >= 18 && cnh == false){
+    console.log("você está dirigindo sem carteira de motorista")
+} else if(idade >= 18 && cnh == true){
+    console.log("Você é de maior e habilitado!")
+} else {
+    console.log("você é de menor, e não pode dirigir")
 };
