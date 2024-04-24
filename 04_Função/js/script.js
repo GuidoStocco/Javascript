@@ -131,3 +131,11 @@ function imprimir(x,y){
 console.log(numb)
 
 imprimir(3,9);
+
+
+// 
+const imprimindo = (i) =>{
+    return i % 2;
+};
+
+console.log(imprimindo(3));
