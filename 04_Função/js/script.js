@@ -1,5 +1,5 @@
 // Funções
-
+/*
 // CRIANDO UMA FUNÇÃO
 function minhaFuncao () {
     console.log("Testando");
@@ -97,3 +97,37 @@ const raizQuadrada = (x) => {
 
 console.log(raizQuadrada(5));
 
+*/
+
+// 
+function podeDirigir(idade, cnh){
+    if(idade >= 18 && cnh == true){
+        console.log("Pode dirigir")
+    } else(
+        console.log("Não pode dirigir")
+    )
+};
+
+console.log(podeDirigir(19,true));
+console.log(podeDirigir(19,0));
+console.log(podeDirigir(19,1));
+
+
+//
+let numb = 7;
+
+function imprimir(x,y){
+    let numb = x + y;
+
+    if(numb > 10){
+        let numb = 11;
+        numb++
+
+        console.log(numb)
+    }
+    console.log(numb)
+}
+
+console.log(numb)
+
+imprimir(3,9);
