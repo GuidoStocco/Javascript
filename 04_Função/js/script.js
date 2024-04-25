@@ -98,7 +98,7 @@ const raizQuadrada = (x) => {
 console.log(raizQuadrada(5));
 
 */
-
+/*
 // 
 function podeDirigir(idade, cnh){
     if(idade >= 18 && cnh == true){
@@ -139,3 +139,4 @@ const imprimindo = (i) =>{
 };
 
 console.log(imprimindo(3));
+*/
