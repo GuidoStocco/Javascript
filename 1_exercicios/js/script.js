@@ -113,7 +113,7 @@ function imprimindoDoisNumeros(n1, n2){
 
 console.log(imprimindoDoisNumeros(10,24));
 
-//
+// retornar números aleátorios
 function retorno(numb){
     return Math.floor(Math.random() * numb) ;
 }
@@ -186,7 +186,7 @@ console.log(potencia(4,3));
 console.log(potencia(4,4));
 */
 //
-
+/*
 function imprimirPar(num){
     for( let i = num; i >= 0; i--){
         if(i % 2 == 0){
@@ -196,3 +196,4 @@ function imprimirPar(num){
 };
 
 imprimirPar(15);
+*/
