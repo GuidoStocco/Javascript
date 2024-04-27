@@ -70,4 +70,25 @@ for(let i = 0; i <= numeros.length; i++){
     console.log(numeros[i]);
 }
 
+// métodos push pra inserir e pop para remover
+const nomeCompleto = ["Guido", "Marinho"];
 
+console.log(nomeCompleto);
+
+const ultimoNome = nomeCompleto;
+
+ultimoNome.push("Stocco");
+
+console.log(ultimoNome);
+
+// Métodos unshift para adicionar no inicio e shift para remover
+
+const fruta = ["melao", "maca", "laranja"];
+console.log(fruta);
+fruta.unshift("pera");
+console.log(fruta);
+
+const brand = ["bmw", "fiat", "chevrolet", "vw"];
+console.log(brand);
+brand.shift();
+console.log(brand[0]);
