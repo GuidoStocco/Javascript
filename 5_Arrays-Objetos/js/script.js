@@ -16,6 +16,7 @@ const myName = "Guido";
 console.log(myName.length);
 console.log(myName["length"]);
 
+
 // MÉTODOS
 
 const otherNumbers = [1, 2, 3];
@@ -232,7 +233,7 @@ console.log(veiculoA, veiculoB, veiculoC);
 */
 
 // JSON
-
+/*
 const myJson = '{"name": "Guido", "age": 24, "skills": ["PHP", "Javascript"]}';
 console.log(myJson);
 
@@ -242,3 +243,12 @@ const myObject = JSON.parse(myJson);
 console.log(myObject);
 console.log(myObject.name);
 console.log(typeof myObject);
+*/
+
+// metodos 
+const nome = "Guido";
+const sobreNome = " Stocco";
+
+const nomeCompleto = nome.concat(sobreNome);
+
+console.log(nomeCompleto);
