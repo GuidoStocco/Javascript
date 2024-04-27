@@ -92,3 +92,18 @@ const brand = ["bmw", "fiat", "chevrolet", "vw"];
 console.log(brand);
 brand.shift();
 console.log(brand[0]);
+
+
+// Métodos indexOf encontra um índice e lastIndexOf o último
+const numeroIndex = [1,2,3,4,5];
+console.log(numeroIndex.indexOf(3));
+console.log(numeroIndex.lastIndexOf(5));
+
+
+// Método slice retorna um array a partir de outro array
+const numeroSlice = [0,1,2,3,4,5,6];
+console.log(numeroSlice.slice(2,4));
+console.log(numeroSlice.slice(3));
+
+
+//
