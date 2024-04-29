@@ -116,4 +116,31 @@ marcaDeCarros.forEach(marcaDeCarro => {
 });
 
 
+// Método de array includes
+const peixe = ["badejo", "cioba", "cação", "dourado"];
+
+console.log(peixe.includes("badejo"));
+console.log(peixe.includes("vermelho"));
+
+
+//Reverse
+const numeros1 = [1,2,3,4,5,6];
+
+console.log(numeros1.reverse());
+
+
+// Método de string : trim
+
+let nome2 = "   guido";
+console.log(nome2);
+
+let nomeCorrigido = nome2.trim();
+console.log(nomeCorrigido);
+
+
 //
+const nomeCompleto1 = '1';
+console.log(nomeCompleto1.padStart(4, '0'));
+
+const nomeCompleto2 = '1';
+console.log(nomeCompleto1.padEnd(4, '0'));
