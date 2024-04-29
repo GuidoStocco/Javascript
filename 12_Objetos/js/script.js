@@ -138,9 +138,27 @@ let nomeCorrigido = nome2.trim();
 console.log(nomeCorrigido);
 
 
-//
+//metodo de string : padStart
 const nomeCompleto1 = '1';
 console.log(nomeCompleto1.padStart(4, '0'));
 
 const nomeCompleto2 = '1';
 console.log(nomeCompleto1.padEnd(4, '0'));
+
+
+// metodo de string : split
+let frase = 'guido marinho stocco';
+console.log(frase);
+
+let novaFrase = frase.split(" ");
+console.log(novaFrase);
+
+
+// Método de string : join
+const palavra = novaFrase.join('.')
+console.log(palavra);
+
+
+// Metodo de string : repeat
+let repetir = 'guido';
+console.log(repetir.repeat(5));
