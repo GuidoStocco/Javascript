@@ -105,7 +105,15 @@ const numeroSlice = [0,1,2,3,4,5,6];
 console.log(numeroSlice.slice(2,3));
 console.log(numeroSlice.slice(2,4));
 console.log(numeroSlice.slice(3));
-console.log(numeroSlice.slice(-1));
+console.log(numeroSlice.slice(2,-1));
+
+
+// forEach
+const marcaDeCarros = ["bmw", "fiat", "VW", "ferrari"];
+
+marcaDeCarros.forEach(marcaDeCarro => {
+    console.log("Nome é " + marcaDeCarro);
+});
 
 
 //
