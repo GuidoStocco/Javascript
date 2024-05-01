@@ -182,4 +182,10 @@ imprimirNumeros(2,6,4,3)
 
 
 // destructuring com objetos
-    
+const objDestructuring = {
+    nome: "Guido",
+    idade: 24,
+    profissao: "Desenvolvedor"
+};
+
+const 
