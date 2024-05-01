@@ -188,4 +188,41 @@ const objDestructuring = {
     profissao: "Desenvolvedor"
 };
 
-const 
+const {nome: onome, idade: oidade, profissao: oprofissao} = objDestructuring;
+
+console.log(onome);
+console.log(oidade);
+console.log(oprofissao);
+
+
+// Destructuring com array
+let numerosDestructuring = [1,3,5,7];
+
+let [numb1, numb2, numb3, numb4] = numerosDestructuring;
+ 
+console.log(numb1, numb2);
+console.log(numb3);
+console.log(numb4);
+
+
+// JSON
+let person = {
+    "nome": "ravena",
+    "idade": 24,
+    "cabelo": "cacheado",
+    "idioma": ["Português", "ingles"]
+};
+
+console.log(person.nome);
+console.log(person.idade);
+console.log(person.cabelo);
+
+console.log(person);
+
+//JSON PARA STRING / STRING PARA JSON
+let personToText = JSON.stringify(person);
+console.log(personToText);
+
+let personJson = JSON.parse(personToText);
+console.log(personJson);
+console.log(personJson.idioma[1]);
