@@ -162,3 +162,24 @@ console.log(palavra);
 // Metodo de string : repeat
 let repetir = 'guido';
 console.log(repetir.repeat(5));
+
+
+// Rest operator definido por três pontos ...
+let num = 1;
+let num2 = 2;
+let num3 = 7;
+let num4 = 5;
+
+function imprimirNumeros(...args) {
+    for(let i = 0; i < args.length; i++){
+        console.log(args[i])
+    };
+};
+
+imprimirNumeros(num, num2, num3, num4);
+imprimirNumeros(num2, num4);
+imprimirNumeros(2,6,4,3)
+
+
+// destructuring com objetos
+    
