@@ -80,5 +80,39 @@ const jason = {
     "profissao": "desenvolvedor"
 };
 
-const jason1 = jason;
-console.log(jason1.profissao)
+console.log(jason.profissao)
+console.log(jason.nome)
+console.log(jason.idade);
+
+
+//
+const frase = "vou ser um desenvolvedor fullstack";
+
+fraseCompleta = frase.split(" ");
+
+for(let i = 0; i < fraseCompleta.length; i = i + 1){
+    console.log(fraseCompleta[i])
+};
+
+
+
+//calculadora
+const calculadora = {
+    somar: function(a,b){
+        return a + b
+    },
+    subtrair: function(a,b){
+        return a - b
+    },
+    multiplicar: function(a,b){
+        return a * b
+    },
+    dividir: function(a,b){
+        return a / b
+    }
+};
+
+console.log(calculadora.somar(10,5));
+console.log(calculadora.subtrair(5,5));
+console.log(calculadora.multiplicar(2,2));
+console.log(calculadora.dividir(10,5));
