@@ -8,3 +8,22 @@ console.log(arrayNumeros[3]);
 
 
 //
+const nome = ["Guido", 24];
+
+const profissao = ["Desenvolvedor", "Prado", true, 24];
+
+console.log(nome.length);
+console.log(profissao.length);
+
+
+
+//
+let onibus = {
+    rodas: 8,
+    passageiros: 40,
+    portas: 2
+};
+
+console.log(onibus.rodas);
+console.log(onibus.passageiros);
+console.log(onibus.portas);
