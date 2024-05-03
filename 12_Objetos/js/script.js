@@ -226,3 +226,7 @@ console.log(personToText);
 let personJson = JSON.parse(personToText);
 console.log(personJson);
 console.log(personJson.idioma[1]);
+
+
+
+//
