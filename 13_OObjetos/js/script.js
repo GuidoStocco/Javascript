@@ -96,3 +96,19 @@ function criarCachorro(raca, patas, cor){
 let pastorAlemao = criarCachorro("Pastor Alemão", 4, "Marrom");
 console.log(pastorAlemao);
 console.log(pastorAlemao.cor);
+
+
+
+// Classes por 'new'
+function Cachorro(raca, cor){
+    this.raca = raca;
+    this.cor = cor;
+};
+let husky = new Cachorro("Husky", "laranja");
+
+console.log(husky.raca);
+console.log(husky.cor);
+console.log(husky);
+
+
+//
