@@ -111,4 +111,37 @@ console.log(husky.cor);
 console.log(husky);
 
 
-//
+// Método prototype
+function Lobo(raca, cor){
+    this.raca = raca;
+    this.cor = cor;
+};
+
+Lobo.prototype.uivar = function(){
+    console.log("auuu");
+};
+
+Lobo.prototype.latir = function(){
+    console.log("au au");
+};
+
+
+let wolf = new Lobo("Lobo", "preto");
+console.log(wolf);
+wolf.uivar();
+wolf.latir();
+
+
+// Novo jeito de criar classes com constructor (ES6)
+class Gato {
+    constructor(raca, patas){
+        this.raca = raca;
+        this.patas = patas;
+    }
+};
+
+let gatoRajado = new Gato("Rajado", 4);
+
+console.log(gatoRajado.raca);
+console.log(gatoRajado.patas);
+
