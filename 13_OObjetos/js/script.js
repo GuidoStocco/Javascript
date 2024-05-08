@@ -209,4 +209,19 @@ console.log(dante.nomeCrianca);
 
 
 
-//
+//HERANÇA temos que usar o extends
+class Lobo1{
+    constructor(patas){
+        this.patas = patas;
+    };
+};
+
+class Cachorro1 extends Lobo1{
+    constructor(patas, raca){
+        super(patas, patas);
+        this.raca = raca;
+    };
+};
+
+let yorkshire = new Cachorro1(4, 'yorkshire');
+console.log(yorkshire);
