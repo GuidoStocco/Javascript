@@ -145,3 +145,18 @@ let gatoRajado = new Gato("Rajado", 4);
 console.log(gatoRajado.raca);
 console.log(gatoRajado.patas);
 
+
+// Override nas propriedades do prototype
+class Pessoa{
+    constructor (nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+};
+
+let cliente = new Pessoa("Guido", 24)
+
+Pessoa.prototype.profissao = "Desenvolvedor";
+
+console.log(cliente);
+console.log(Pessoa.prototype.profissao);
