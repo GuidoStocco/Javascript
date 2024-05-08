@@ -225,3 +225,5 @@ class Cachorro1 extends Lobo1{
 
 let yorkshire = new Cachorro1(4, 'yorkshire');
 console.log(yorkshire);
+// Instanceof verificar qm é o pai do objeto 
+console.log(new Cachorro1 instanceof Lobo1);
