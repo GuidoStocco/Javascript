@@ -160,3 +160,53 @@ Pessoa.prototype.profissao = "Desenvolvedor";
 
 console.log(cliente);
 console.log(Pessoa.prototype.profissao);
+
+
+
+// GET E SET 
+class Carro{
+    constructor(marca, cor){
+        this.marca = marca;
+        this.cor = cor;
+    };
+
+    get nomeMarca() {
+        return "A marca é " + this.marca;
+    };
+
+    set novaMarca(marca){
+        this.marca = marca;
+    };
+};
+
+let bmw = new Carro("BMW", "Azul");
+console.log(bmw.nomeMarca);
+
+bmw.novaMarca = "Fiat"
+console.log(bmw.nomeMarca);
+//Outro exemplo
+
+class Crianca{
+    constructor(nome, peso){
+        this.nome = nome;
+        this.peso = peso;
+    };
+
+    get nomeCrianca(){
+        return this.nome;
+    };
+
+    set novoNome(nome){
+        this.nome = nome;
+    };
+};
+
+let dante = new Crianca("Dante", 3);
+console.log(dante);
+
+dante.novoNome = "Beni";
+console.log(dante.nomeCrianca);
+
+
+
+//
