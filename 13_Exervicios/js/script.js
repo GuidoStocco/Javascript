@@ -87,5 +87,22 @@ console.log(carrinho);
 
 
 //
+class Endereco{
+    constructor(rua, bairro, cidade, estado){
+        this.rua = rua;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
+    };
 
+    set novaRua(novaRua){
+        this.rua = novaRua;
+    }
 
+}
+
+let endereco = new Endereco("José joaquim Seabra", "Centro", "Prado", "Bahia");
+console.log(endereco);
+
+endereco.novaRua = "Pedro Brás";
+console.log(endereco);
