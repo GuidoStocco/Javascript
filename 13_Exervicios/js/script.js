@@ -168,6 +168,10 @@ class Conta{
         this.saldoCC += valor; 
     };
 
+    jurosDeAniversario(){
+        let juros = (this.saldoCP * this.juros) / 100;
+        this.saldoCP += juros;
+    }
 
 };
 
@@ -186,6 +190,9 @@ console.log(conta);
 conta.transferenciaCC(500);
 console.log(conta)
 
+
+conta.jurosDeAniversario();
+console.log(conta)
 
 
 //
