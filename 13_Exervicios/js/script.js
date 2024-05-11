@@ -106,3 +106,86 @@ console.log(endereco);
 
 endereco.novaRua = "Pedro Brás";
 console.log(endereco);
+
+
+
+//
+class Carro{
+    constructor (marca, cor, gasolina, consumo) {
+        this.marca = marca;
+        this.cor = cor;
+        this.gasolina = gasolina;
+        this.consumo = consumo; // adicionado para medir o consumo do carro
+    }
+
+    dirigir(km){
+        let litroConsumido = km / this.consumo;
+
+        this.gasolina -= litroConsumido;
+    };
+
+    abastecer(l){
+        this.gasolina += l;
+    }
+
+
+};
+
+let carro = new Carro("Fiat", "Branco", 100, 15);
+console.log(carro);
+
+carro.dirigir(100);
+console.log(carro);
+
+carro.abastecer(10);
+console.log(carro);
+
+
+
+//
+class Conta{
+    constructor(saldoCC, saldoCP, juros){
+        this.saldoCC = saldoCC;
+        this.saldoCP = saldoCP;
+        this.juros = juros;
+    };
+
+    deposito(valor){
+        this.saldoCC += valor;
+    };
+
+    saque(valor){
+        this.saldoCC -= valor
+    };
+
+    transferenciaCP(valor){
+        this.saldoCC -= valor;
+        this.saldoCP += valor; 
+    };
+
+    transferenciaCC(valor){
+        this.saldoCP -= valor;
+        this.saldoCC += valor; 
+    };
+
+
+};
+
+let conta = new Conta(1000, 5000, 1);
+console.log(conta);
+
+conta.saque(1000);
+console.log(conta);
+
+conta.deposito(3000);
+console.log(conta)
+
+conta.transferenciaCP(2000);
+console.log(conta);
+
+conta.transferenciaCC(500);
+console.log(conta)
+
+
+
+//
