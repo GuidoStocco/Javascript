@@ -16,7 +16,8 @@ const reg2 = /12345/;
 
 console.log(reg2.test('o conjunto tem o número 6?'));
 console.log(reg2.test('o conjunto tem o número 2?'));
-
-const reg3 = /0-9/; // jeito certo de fazer
-
-console.log(reg3.test('temos o numero 9'))
+                                  
+const reg3 = /[0-9]/; // jeito certo de fazer
+//confirmar se há números dentro da string
+console.log(reg3.test("temos o numero "))
+console.log(reg3.test("temos o numero 43"))
