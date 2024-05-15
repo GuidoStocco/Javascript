@@ -35,3 +35,10 @@ const dRegex = /\d/; // [0-9]
 console.log(dRegex.test(" "))
 console.log(dRegex.test("123"))
 console.log(dRegex.test("123dsad"))
+
+
+// Operador not ^
+const reg5 = /^asd/;
+console.log(reg5.test('asd'))
+console.log(reg5.test('123'))
+console.log(reg5.test('asd da213'))
