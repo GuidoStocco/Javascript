@@ -21,3 +21,17 @@ const reg3 = /[0-9]/; // jeito certo de fazer
 //confirmar se há números dentro da string
 console.log(reg3.test("temos o numero "))
 console.log(reg3.test("temos o numero 43"))
+
+
+// caracteres especiais
+const pontoRegex = /./ ;
+//o ponto aceita tudo menos quebra de linha
+console.log(pontoRegex.test('asd'))
+console.log(pontoRegex.test('123'))
+console.log(pontoRegex.test(' '))
+
+const dRegex = /\d/; // [0-9]
+//aceita qualquer digito
+console.log(dRegex.test(" "))
+console.log(dRegex.test("123"))
+console.log(dRegex.test("123dsad"))
