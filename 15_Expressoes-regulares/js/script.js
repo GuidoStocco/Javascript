@@ -1,6 +1,6 @@
 //Expressoes regulares
 // New RegExp ou /.../
-
+/*
 const reg1 = new RegExp('marinho');
 
 console.log(reg1.test('Guido marinho stocco'));
@@ -42,3 +42,60 @@ const reg5 = /^asd/;
 console.log(reg5.test('asd'))
 console.log(reg5.test('123'))
 console.log(reg5.test('asd da213'))
+
+
+// Operador ?
+const reg6 = /Abacax?i/;
+
+console.log(reg6.test("Abacaxi"));
+console.log(reg6.test("Abacai"));
+
+
+const reg7 = /\d+\w?/
+
+console.log(reg7.test('123'))
+console.log(reg7.test('123 a'))
+console.log(reg7.test('123 '))
+console.log(reg7.test(' '))
+
+*/
+/*
+// Ocorrência precisa {}
+const reg8 = /\d{4,5}-\d{4}/;
+
+console.log(reg8.test('4004-5050'))
+console.log(reg8.test('99999-8080'))
+console.log(reg8.test('999-999'))
+console.log(reg8.test('99999-9'))
+
+const tel = /\(\d{2}\)\d{4,5}-\d{4}/;
+
+console.log(tel.test('(73) 55555-4444'));
+console.log(tel.test("(48) 9999-9999"));
+
+
+//Método exec
+const digitos = /\d+/;
+
+console.log(digitos.exec("tem o numero 100"))
+console.log(digitos.exec("tem o numero"))
+
+
+//Método match
+// Esse método não é muito utilizado
+const frase = "O numero 100 estar aqui".match(/\d+/); 
+
+console.log(frase);
+
+
+//choice pattern
+const palavra = /\w+: (Guido|Joao|Maria)/;
+
+console.log(palavra.test("nome: Guido"))
+console.log(palavra.test("nome: ravena"))
+console.log(palavra.test("nome: Joao"))
+
+*/
+
+// Validando Dóminios
+const dominio = /www.\w+\.com|.com.br/;
