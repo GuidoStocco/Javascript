@@ -1,4 +1,4 @@
-/*
+
 console.log("Ainda não executou");
 
 setTimeout(function(){
@@ -12,9 +12,9 @@ console.log("Ainda não executou");
 
 console.log("Ainda não executou 2");
 
-//setTimeout(function(){
-//    console.log("Intervalo Assíncrono");
-//}, 3000);
+setTimeout(function(){
+   console.log("Intervalo Assíncrono");
+}, 3000);
 
 console.log("Ainda não executou 2");
 
@@ -30,7 +30,7 @@ promessa.then((value) => {
 });
 
 console.log("Outro código");
-*/
+
 
 // async function
 
