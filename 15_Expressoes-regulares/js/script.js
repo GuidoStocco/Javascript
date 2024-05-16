@@ -96,7 +96,7 @@ console.log(palavra.test("nome: ravena"))
 console.log(palavra.test("nome: Joao"))
 
 */
-
+/*
 // Validando Dóminios
 //[?www.] para não precisar digitar o www uma expressao mais avançada
 const dominio = /[?www.]\w+\.com|.com.br/;
@@ -129,7 +129,44 @@ console.log(dataNascimento.test("5-2-2009"))
 console.log(dataNascimento.test("5/2/00"))
 console.log(dtNascimento.test("99/99/1999"))
 
+*/
 
 
 
+//ATIVIDADES
+ 
+// 1- REGEX QUE SÓ ACEITA LETRAS MAIÚSCULAS
+const regs1 = /[A-Z]/;
+console.log(regs1.test("TEWSTANDIO")) // TRUE
+console.log(regs1.test("testando")) // FALSE
+console.log(regs1.test("123")) // FALSE
 
+
+// 2- REGEX QUE SÓ ACEITE STRINGS TERMINADO COM ID
+const regs2 = /\d+ID\b/; // ESSE b COM A BARRA SIGNIFICA QUE A STRING TERMINA COM ID
+console.log(regs2.test("1233ID")) // TRUE
+console.log(regs2.test("asdasdaID")) // FALSE
+console.log(regs2.test("ID")) // FALSE
+
+
+// 3 - REGEX QUE SÓ ACEITE A SEGUINTE EXPRESSÃO "MARCA: nomedamarca"
+//Pode variar para outras marcas ULTILIZANDO CHOICE PATTERN
+const regs3 = /Marca: (Nike|Adidas|Pulma|Asics)/;
+console.log(regs3.test("Marca: Nike")) //TRUE
+console.log(regs3.test("Marca: nike")) // FALSE POR CAUSA DO SENSITIVE TEM Q SER IGUAL
+
+
+
+// 4 - REGEX QUE VALIDE UM ENDEREÇO DE IP
+const regs4 = /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/; //um intervalo que vai aceita de 1 a 3
+//[0-9]{3}[.][0-9]{1}[.][0-9]{2}/
+console.log(regs4.test("123.1.1.2")) // TRUE
+console.log(regs4.test("8.8.8.8")) // TRUE
+
+
+// 5- REGEX QUE VALIDA NOMES DE USUÁRIOS NO SISTEMA
+const regs5 = /^(?=.{3,16}$)[a-z0-9-_]/ // ^(?=.$) SÃO OQ O SITE NÃO VAI ACEITAR
+console.log(regs5.test("guido2024")) // TRUE
+console.log(regs5.test("guido_24")) // TRUE
+console.log(regs5.test("ga")) // FALSE
+console.log(regs5.test("12312313412412323131231")) // FALSE
