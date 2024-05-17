@@ -3,7 +3,7 @@
 // callbacks com setTimeOut
 console.log("1")
 
-//setTimeOut(function() {
+//setTimeout(function() {
  //   console.log("5")
 //}, 2000);
 
@@ -11,6 +11,7 @@ console.log("1")
 
 
 // Promise
+/*
 let promessa = Promise.resolve(5 + 5);
 
 console.log("outros códigos"); // códigos aleatórios
@@ -30,7 +31,7 @@ promessaErrada
     .then((value) => console.log(value))
     .catch(reason => console.log("Erro: " + reason));     
 
-
+*/
 
 // REJECT
 /*
@@ -64,3 +65,33 @@ const p2 = new Promise((resolve, reject) =>{
 });
 
 Promise.all([p,p1,p2]).then((values) => console.log(values));
+
+
+// async function
+async function somar(a, b) {
+    return a + b ;
+};
+
+somar(2, 2).then((value) => {
+    console.log(value);
+});
+
+
+
+//  await - esperar uma promise ser resolvida para apresentar os resultados
+function multiplicar(c, d){
+    return new Promise(resolve => {
+        setTimeout(function() {
+            resolve(c*d);
+        }, 4000);
+    });
+};
+
+async function multiply(b,c,d) {
+    let x = multiplicar(c,d)
+    let y = b;
+
+    return await x * y;
+};
+
+multiply(5,3,2).then((value) => console.log(value));
