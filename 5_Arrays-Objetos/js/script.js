@@ -71,7 +71,7 @@ console.log(a === b);
 
 a.age = 31;
 console.log(b); 
-*/
+
 
 // LOOP EM ARRAY
 /*
@@ -252,3 +252,21 @@ const sobreNome = " Stocco";
 const nomeCompleto = nome.concat(sobreNome);
 
 console.log(nomeCompleto);
+
+
+// MUTAÇÃO
+const pessoa ={
+    nome: 'Guido'
+};
+
+const pessoa2 = pessoa;
+
+console.log(pessoa == pessoa2)
+
+pessoa2.nome = "ravena";
+
+console.log(pessoa.nome)
+
+pessoa.nome = 'maria';
+
+console.log(pessoa2.nome)
