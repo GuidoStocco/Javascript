@@ -82,7 +82,7 @@ for(let i = 0; i < users.length; i++){
 }
 
 // PUSH AND POP
-
+// PUSH ADICIONA NO FINAL E POP REMOVE NO FINAL
 const array = ['a', 'b', 'c'];
 array.push('d');
 console.log(array);
