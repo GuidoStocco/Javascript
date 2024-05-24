@@ -74,7 +74,7 @@ console.log(b);
 
 
 // LOOP EM ARRAY
-/*
+
 const users = ["guido", "mateus", "joão", "miguel"];
 
 for(let i = 0; i < users.length; i++){
@@ -127,10 +127,10 @@ const nums = [1, 2, 3, 4, 5];
 nums.forEach((numero) =>{
     console.log(`o número é ${numero}`);
 });
-*/
+
 
 // INCLUDES
-/*
+/* 
 const brands = ["bmw", "fiat", "nissan"];
 
 console.log(brands.includes("fiat"));
@@ -233,7 +233,7 @@ console.log(veiculoA, veiculoB, veiculoC);
 */
 
 // JSON
-/*
+
 const myJson = '{"name": "Guido", "age": 24, "skills": ["PHP", "Javascript"]}';
 console.log(myJson);
 
@@ -243,7 +243,7 @@ const myObject = JSON.parse(myJson);
 console.log(myObject);
 console.log(myObject.name);
 console.log(typeof myObject);
-*/
+
 
 // metodos 
 const nome = "Guido";
@@ -270,3 +270,36 @@ console.log(pessoa.nome)
 pessoa.nome = 'maria';
 
 console.log(pessoa2.nome)
+
+//
+// MÉTODO DE ARRAY SLICE
+
+const metodoSlice = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+const testeSlice = metodoSlice.slice(2, 4);
+
+console.log(testeSlice);
+
+console.log(metodoSlice);
+
+const testeSlice2 = metodoSlice.slice(2, 4 + 1);
+
+console.log(testeSlice2);
+
+
+// padStart
+const fullName = '24';
+
+console.log(fullName.padStart(3, '0'))
+
+//split
+// muito utilizado no método json
+const frase = 'testando método split';
+
+console.log(frase.split(' ')) 
+//join
+const palavra = frase.split(' ');
+
+
+const novaFrase = palavra.join(',');
+console.log(novaFrase)
