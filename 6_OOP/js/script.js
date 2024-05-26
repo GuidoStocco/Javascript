@@ -165,3 +165,34 @@ class Lobo extends Mamifero {
 };
 const Wolf = new Lobo(4, 'Wolf');
 console.log(Wolf);
+
+
+const pessoa = {
+    nome: 'Guido',
+    sobreNome: '',
+    setSobrenome: function(sobreNome){
+        this.sobreNome = sobreNome;
+    },
+    getSobrenome: function(){
+        return `Sobrenome é ${this.sobreNome}`;
+    }
+};
+
+pessoa.setSobrenome('Stocco');
+
+console.log(pessoa)
+console.log(pessoa.sobreNome)
+console.log(pessoa.getSobrenome());
+
+// classes
+
+class Cachorro{
+    constructor(nome, raca){
+        this.nome = nome;
+        this.raca = raca;
+    };
+};
+
+const bidu = new Cachorro('Bidu', 'vira-lata');
+
+console.log(bidu)
