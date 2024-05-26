@@ -108,7 +108,7 @@ console.log(Humano.prototype.nome);
 
 
 // SYMBOL COM CLASSES
-/*
+
 class Pc {
     constructor(placa_mae, processador){
         this.placa_mae = placa_mae;
@@ -132,14 +132,16 @@ class Post{
         this.tags = tags;
     }
 
-    get exibirTitulo(){
-        return `Você está lendo: ${this.titulos}`;
-    }
-
     set adicionarTags(tags){
         const tagsArray = tags.split(', ')
         this.tags = tagsArray
     }
+
+    get exibirTitulo(){
+        return `Você está lendo: ${this.titulos}`;
+    }
+
+    
 };
 const myPost = new Post('Sobre computadores', 'Melhores processadores');
 console.log(myPost);
@@ -147,10 +149,10 @@ console.log(myPost.exibirTitulo);
 
 myPost.adicionarTags = "Programação, javascrpit, js"
 console.log(myPost);
-*/
+
 
 // HERANÇA
-
+/*
 class Mamifero {
     constructor(patas){
         this.patas = patas;
@@ -191,8 +193,49 @@ class Cachorro{
         this.nome = nome;
         this.raca = raca;
     };
+
+    latir(){
+        console.log("au au")
+    }
 };
+
+Cachorro.prototype.patas = 4;
 
 const bidu = new Cachorro('Bidu', 'vira-lata');
 
+bidu.latir();
 console.log(bidu)
+console.log(bidu.patas)
+*/
+
+
+// set and get
+class Carro {
+    constructor(roda, porta, cores){
+        this.roda = roda;
+        this.porta = porta;
+        this.cores = cores;
+    }
+
+    buzina(){
+        console.log('bii')
+    }
+
+    set novaCor(cores){
+         const novasCores = cores.split(',');
+         this.cores = novasCores;
+    }
+
+    get novaCores(){
+        return "temos várias cores " + this.cores;
+    }
+};
+
+const bmw = new Carro(4, 4);
+console.log(bmw)
+
+bmw.novaCor = "'vermelho', 'azul', 'preto', 'cinza'";
+console.log(bmw)
+console.log(bmw.novaCores)
+
+bmw.buzina();
