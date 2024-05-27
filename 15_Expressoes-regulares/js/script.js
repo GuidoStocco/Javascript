@@ -170,3 +170,16 @@ console.log(regs5.test("guido2024")) // TRUE
 console.log(regs5.test("guido_24")) // TRUE
 console.log(regs5.test("ga")) // FALSE
 console.log(regs5.test("12312313412412323131231")) // FALSE
+
+
+
+
+
+
+//
+const regNome = /\w\w\w\w\w/;
+
+console.log(regNome.test("Guido"));
+console.log(regNome.test("Guido123"));
+console.log(regNome.test("Guidostocco"));
+console.log(regNome.test("Gui321"));
