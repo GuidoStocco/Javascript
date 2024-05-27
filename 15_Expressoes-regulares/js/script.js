@@ -182,4 +182,11 @@ const regNome = /\(\d{2}\)\d{4,5}-\d{4}/;
 console.log(regNome.test("(73)99115-2207"));
 console.log(regNome.test("99115-2207"));
 console.log(regNome.test("739989-3525"));
-console.log(regNome.test(" "));
+
+//
+const regNome1 = /\w+: (Matheus|Guido|João)/;
+// O ESPAÇO ENTRE O : E () CONTA 
+console.log(regNome1.test("Nome: Guido"));
+console.log(regNome1.test("Nome guido"));
+console.log(regNome1.test("nome guido"));
+
