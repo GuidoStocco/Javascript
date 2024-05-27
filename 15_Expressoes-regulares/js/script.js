@@ -171,11 +171,39 @@ console.log(regs5.test("guido_24")) // TRUE
 console.log(regs5.test("ga")) // FALSE
 console.log(regs5.test("12312313412412323131231")) // FALSE
 
+// Validando Dóminios
+//[?www.] para não precisar digitar o www uma expressao mais avançada
+const dominio = /[?www.]\w+\.com|.com.br/;
+
+console.log(dominio.test("www.google.com"))
+console.log(dominio.test("www.horadecordar.com.br"))
+console.log(dominio.test("www.horadecordar"))
+console.log(dominio.test("horadecordar.com.br"))
+
+//Validando email
+//Filtrar se algo tiver muito errado, sendo assim utilizamos isso
+const email = /\w+@\w+\.\w+/;
+
+console.log(email.test("lleaguebr@gmail.com"))
+console.log(email.test("guidomarinho6@gmail.com"))
+console.log(email.test("guidomarinho6@gmail"))
+console.log(email.test("gmail"))
 
 
 
+//Validando datas de nascimento
+//Validando datas brasileiras que usam barras não traços
+const dataNascimento = /[0-9]{2}[/][0-9]{02}[/][0-9]{4}/;
+const dtNascimento = /[0-31]{2}[/][0-12]{02}[/][1920-2020]{4}/; // evitar que as pessoas burlem
+
+console.log(dataNascimento.test("15/02/2000"))
+console.log(dataNascimento.test("5/2/2009"))
+console.log(dataNascimento.test("5-2-2009"))
+console.log(dataNascimento.test("5/2/00"))
+console.log(dtNascimento.test("99/99/1999"))
 
 
+/*
 //
 const regNome = /\(\d{2}\)\d{4,5}-\d{4}/;
 
@@ -190,3 +218,4 @@ console.log(regNome1.test("Nome: Guido"));
 console.log(regNome1.test("Nome guido"));
 console.log(regNome1.test("nome guido"));
 
+*/
