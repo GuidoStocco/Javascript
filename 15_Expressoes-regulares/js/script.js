@@ -177,9 +177,9 @@ console.log(regs5.test("12312313412412323131231")) // FALSE
 
 
 //
-const regNome = /\w\w\w\w\w/;
+const regNome = /\d{5}-\d{3}/;
 
-console.log(regNome.test("Guido"));
-console.log(regNome.test("Guido123"));
-console.log(regNome.test("Guidostocco"));
-console.log(regNome.test("Gui321"));
+console.log(regNome.test("45980-000"));
+console.log(regNome.test("11155-22"));
+console.log(regNome.test("123"));
+console.log(regNome.test("asdad"));
