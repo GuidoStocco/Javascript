@@ -20,3 +20,8 @@ let footerH2 = document.getElementById('#footerh2');
 let texto = document.createTextNode('texto dentro do h2')
 
 footerH2.appendChild(texto);
+
+
+
+// CRIANDO UM EVENTO
+// addEventoListener
