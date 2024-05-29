@@ -31,3 +31,42 @@ const notUsersAvalible = users.filter((user) =>{
 console.log(usersAvalible)
 console.log(notUsersAvalible)
 
+
+
+// Map
+// é um método de array que percorre todos os elementos
+const produtos = [
+    {name: 'Camisa', price: 10.99, category:'roupas'},
+    {name: 'ferro de passar', price: 50.99, category:'eletro'},
+    {name: 'fogao', price: 400, category:'eletro'},
+    {name: 'calça', price: 30.99, category:'roupas'}
+]
+
+produtos.map((produto) => {
+    if(produto.category === 'roupas'){
+        produtos.comDesconto = true
+    }
+});
+
+console.log(produtos)
+
+
+// Destructuring em objetos e array
+const frutas = ["Maça", "Laranja", 'Melão'];
+
+const [nada, fruta2, fruta3] = frutas;
+console.log(nada)
+console.log(fruta3)
+//
+// destructuring em objetos
+
+const pessoa = {
+    nome: "guido",
+    idade: 24,
+    profissao: "desenvolvedor"
+};
+
+const {nome, idade, profissao: dev} = pessoa
+
+console.log(dev)
+console.log(idade)
