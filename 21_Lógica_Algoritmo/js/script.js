@@ -7,3 +7,13 @@ if(resultado >= 7){
 } else{
     console.log("Voce foi reprovado!")
 };
+
+
+// Juros
+function jurosFinal(valor, taxa, total){
+    const juros = valor * taxa * total;
+    
+    console.log(`juros no valor de ${total} meses é de ${juros}`)
+};
+
+jurosFinal(2000, 0.03, 12);
