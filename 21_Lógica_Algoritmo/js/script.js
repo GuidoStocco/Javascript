@@ -27,3 +27,30 @@ const cargoRemovido = cargos.splice(2,1)
 
 console.log(cargoRemovido);
 console.log(cargos)
+
+
+//desafio
+
+const carrinho = [
+    {
+        nome: "arroz",
+        preco: 7.00
+    },
+    {
+        nome: "feijão",
+        preco: 10.00
+    },
+    {
+        nome: "oleo",
+        preco: 8.00
+    }
+];
+
+let totalCarrinho = 0;
+
+carrinho.forEach((item) => {
+    totalCarrinho = totalCarrinho + item.preco;
+});
+
+console.log(`O total do seu carrinho é: ${totalCarrinho}`)
+
