@@ -93,9 +93,7 @@ const pessoas = [
 ];
 
 function maioresDeIdade(pessoas) {
-    return pessoas.filter((pessoa) => {
-        return pessoa >= 18
-    });
+    return pessoas.filter(pessoa => pessoa.idade >= 18);
 }
 
 let pessoasMaiores = maioresDeIdade(pessoas);
