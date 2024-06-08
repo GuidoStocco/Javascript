@@ -113,6 +113,18 @@ function criarPilha(){
         }
 
         return elementos[elementos.length -1]
+    };
+
+    function remover(){
+        if(pilhaVazia()){
+            return "A pilha está vazia"
+        }
+
+        return elementos.pop()
+    };
+
+    function limpar(){
+        elementos = [];
     }
 
     return{
@@ -120,6 +132,8 @@ function criarPilha(){
         tamanho,
         pilhaVazia,
         topoPilha,
+        remover,
+        limpar
     }
 };
 
