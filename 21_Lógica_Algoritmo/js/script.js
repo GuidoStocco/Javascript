@@ -54,3 +54,33 @@ carrinho.forEach((item) => {
 
 console.log(`O total do seu carrinho é: ${totalCarrinho}`)
 
+// Lista de contatos
+
+const listaContato = [
+    {nome: "Guido", telefone: '739999999'},
+    {nome: "Ravena", telefone: '739999999'},
+    {nome: "Felipe", telefone: '739999999'}
+];
+
+function buscaContato(nomePessoa, contatos) {
+
+    if(!nomePessoa) {
+        console.log("O nome da pessoa é obrigatório!")
+        return "";
+    }
+
+    const contatoPessoas = listaContato.find((contato) => {
+        return contato.nome === nomePessoa;
+    })
+
+    if(!contatoPessoas){
+        return "Essa pessoa não está na lista de contato"
+    }
+
+    return `O ${nomePessoa} tem o telefone: ${contatoPessoas.telefone}`
+
+};
+
+const buscaGuido = buscaContato("pedro", listaContato);
+
+console.log(buscaGuido)
