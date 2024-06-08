@@ -11,3 +11,15 @@ function votacao(idade){
 
 
 console.log(votacao(75));
+
+
+//
+
+function positivo(n1,n2,n3){
+    
+    if(!n1 == true && !n2 == true && !n3 == true ){
+        return "Verdadeiro"
+    } 
+};
+
+console.log(positivo(1,2,3))
