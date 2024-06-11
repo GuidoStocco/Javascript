@@ -221,3 +221,5 @@ let num3 = 3;
 function valorpositivo(num1, num2, num3) {
     return num1 > 0 && num2 > 0 && num3 > 0;
 }
+
+console.log(`Todos os números são positivos ${valorpositivo(num1,num2,num3)}`);
