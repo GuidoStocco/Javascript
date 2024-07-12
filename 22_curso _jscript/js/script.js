@@ -18,7 +18,7 @@ const produtos = [
 for(let i = 0; i < produtos.length; i++){
     tabela.innerHTML += `<tr>
     <th>${produtos[i].nome}</th>
-    <th>${produtos[i].preco}</th>
+    <th>${produtos[i].preco.toFixed(2)}</th>
     <th>${produtos[i].quantidade}</th>
 </tr>`
 };
