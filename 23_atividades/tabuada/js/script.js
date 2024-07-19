@@ -33,5 +33,11 @@
 // 
 // console.log(somar(5,5));
 
-const arr = [[1,2,3,4], [5,6,7,8]];
+const arr = [1,2,3,'alo',true];
+
+const arr1 = arr.filter((el, i, _arr) => {
+    return typeof el === 'number'
+});
+
+console.log(arr1);
 
