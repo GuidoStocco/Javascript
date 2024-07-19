@@ -38,6 +38,11 @@ const arr = [1,2,3,'alo',true];
 const arr1 = arr.filter((el, i, _arr) => {
     return typeof el === 'number'
 });
-
 console.log(arr1);
+
+
+arr.forEach((el, i) => {
+    console.log(el, i)
+});
+
 
